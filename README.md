@@ -366,20 +366,20 @@ Select
       When actor_award.awards like '%,%,%' Then 'Three Awards'
       When actor_award.awards like '%,%' Then 'Two Awards'
       Else 'One Award'
-	 End As 'Number of Awards',
-    Avg (Case When actor_award.actor_id IS NULL Then 0 Else 1 END) As '% of Actors with Films'
-    From actor_award
+   End As 'Number of Awards',
+   Avg (Case When actor_award.actor_id IS NULL Then 0 Else 1 END) As '% of Actors with Films'
+From actor_award
     
 Group by
    Case 
       When actor_award.awards like '%,%,%' Then 'Three Awards'
       When actor_award.awards like '%,%' Then 'Two Awards'
       Else 'One Award'
-	  End; 
+   End; 
 ```
 
 | Number of Awards  | % of Actors with Awards   | 
-| ---------         |:----------------------- : |
+| :-------------:   | :----------------------:  |
 | Three Awards      | 0.5714                    |
 | Two Awards        | 0.9242                    |
 | One Awards        | 0.8333                    |
