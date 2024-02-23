@@ -297,13 +297,45 @@ Left Join film_category ON film.film_id=film_category.film_id
 Left Join category ON film_category.category_id=category.category_id
 
 Group by store_id, name
-Order by Sum(replacement_cost) desc;
+Order by store_id, Sum(replacement_cost) desc;
 ```
 
-> All the items at each store per film category and in ascending order accoring to the total replacement cost.
-> Sports category are at the top of the list.
+> All the items at each store per film category and in ascending order according to the total replacement cost.
 
-
+| store_id | category     |  Number of films | Avg replacement cost  | total replacement_cost |
+|:--------:| --------:    | -----------:     | -------------------:  | -----------------:     |
+|  1       | Action       |  169             | 21.19                 |  3581.31               |
+|  1       | Drama        |  162             | 21.93                 |  3581.31               |
+|  1       | Sports       |  163             | 20.58                 |  3581.31               |
+|  1       | Animation    |  161             | 20.39                 |  3581.31               |
+|  1       | Sci-Fi       |  149             | 21.79                 |  3581.31               |
+|  1       | Family       |  157             | 20.54                 |  3581.31               |
+|  1       | New          |  148             | 19.27                 |  3581.31               |
+|  1       | Foreign      |  153             | 18.56                 |  3581.31               |
+|  1       | Comedy       |  142             | 19.44                 |  3581.31               |
+|  1       | Games        |  128             | 21.13                 |  3581.31               |
+|  1       | Classics     |  131             | 20.61                 |  3581.31               |
+|  1       | Documentary  |  130             | 20.73                 |  3581.31               |
+|  1       | Children     |  129             | 19.99                 |  3581.31               |
+|  1       | Music        |  122             | 19.28                 |  3581.31               |
+|  1       | Travel       |  114             | 19.88                 |  3581.31               |
+|  1       | Horror       |  112             | 19.75                 |  3581.31               |
+|  2       | Sports       |  181             | 20.70                 |  3581.31               |
+|  2       | Animation    |  174             | 19.99                 |  3581.31               |
+|  2       | Documentary  |  164             | 20.54                 |  3581.31               |
+|  2       | Sci-Fi       |  163             | 20.49                 |  3581.31               |
+|  2       | Action       |  143             | 21.50                 |  3581.31               |
+|  2       | Games        |  148             | 20.77                 |  3581.31               |
+|  2       | Family       |  153             | 19.51                 |  3581.31               |
+|  2       | Drama        |  138             | 21.46                 |  3581.31               |
+|  2       | Classics     |  139             | 21.29                 |  3581.31               |
+|  2       | Foreign      |  147             | 18.63                 |  3581.31               |
+|  2       | Children     |  140             | 19.50                 |  3581.31               |
+|  2       | Horror       |  136             | 19.56                 |  3581.31               |
+|  2       | New          |  127             | 20.03                 |  3581.31               |
+|  2       | Comedy       |  127             | 18.87                 |  3581.31               |
+|  2       | Travel       |  121             | 18.71                 |  3581.31               |
+|  2       | Music        |  110             | 18.99                 |  3581.31               |
 
 
 13.	We want to make sure you folks have a good handle on **who your customers are**. Please provide a list 
