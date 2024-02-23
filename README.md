@@ -75,6 +75,8 @@ Order by store_id;
 | 1          | 2270               |
 | 2          | 2311               |
 
+> Store 1 holds slightly more inventory items compared to store 2.
+
 
 3.	We will need a count of **active customers** for each of your stores. Separately, please. 
 
@@ -92,6 +94,7 @@ Group by store_id;
 | 1          | 318                |
 | 2          | 266                |
 
+>Store 1 also has more active customers than store 2, which might indicate higher foot traffic or better engagement strategies.
 
 4.	In order to assess the liability of a data breach, we will need you to provide a count 
 of all customer **email addresses** stored in the database. 
@@ -128,8 +131,9 @@ From category;
 | 1          | 792            |
 | 2          | 769            |
 
-
-> The number of categories is 16.
+> * Both stores offer a wide range of unique films, with store 1 having 792 unique titles and store 2 having 769.
+> * The number of categories is 16.
+>   The presence of 16 unique film categories suggests a diverse selection, catering to different tastes and preferences.
 
 
 6.	We would like to understand the **replacement cost** of your films. 
@@ -159,8 +163,8 @@ Select
      max(amount)
 From payment;
 ```
-> The average payment is 4.2
-> The maximum payment is 11.99
+> The average payment processed is $4.20, with the maximum payment being $11.99.
+
 
 
 
@@ -174,12 +178,19 @@ From rental
 Group by customer_id
 Order by count(rental_id) desc
 ```
+| customer_id   | Total Rentals   | 
+| ------------  |:-------------:  |
+| 148           | 46              |
+| 526           | 45              |
+| 144           | 42              |
+| 236           | 42              |
+| 75            | 41              |
 
-> The highest rental per customer is 46.
+> The highest total rentals per customer is 46 from customer with id 148.
 
 
 
-9. My partner and I want to come by each of the stores in person and meet the **managers**. 
+9. We want to come by each of the stores in person and meet the **managers**. 
 Please send over the managers’ names at each store, with the full address 
 of each property (street address, district, city, and country please). 
  
@@ -225,6 +236,18 @@ Left Join film ON inventory.film_id= film.film_id;
 
 > All the inventory items with the rating, rental rate  and replacemnt cost
 
+| store_id | inventory_id |  title            | rating  | rental_rate |  replacement_cost |
+|:--------:| --------:    | -----------:      | ------: | --------:   |   -----------:    |
+|  1       | 1            |  ACADEMY DINOSAUR | PG      |  0.99       |  20.99            |
+|  1       | 2            |  ACADEMY DINOSAUR | PG      |  0.99       |  20.99            |
+|  1       | 3            |  ACADEMY DINOSAUR | PG      |  0.99       |  20.99            |
+|  1       | 4            |  ACADEMY DINOSAUR | PG      |  0.99       |  20.99            |
+|  1       | 16           |  AFFAIR PREJUDICE | G       |  2.99       |  26.99            |
+|  1       | 17           |  AFFAIR PREJUDICE | G       |  2.99       |  26.99            |
+
+
+
+
 
 11.	From the same list of films you just pulled, please roll that data up and provide a summary level overview 
 of your inventory. We would like to know how many inventory items you have with each **rating** at each store. 
@@ -241,6 +264,20 @@ Group by store_id, rating;
 
 > All the inventory items per rating at each store.
 
+| store_id   | rating  | Inventory items  |  
+| ---------  |:-------:| -----------:     | 
+| 1          | PG      | 444              | 
+| 1          | G       | 394              | 
+| 1          | PG-13   | 525              | 
+| 1          | NC-17   | 465              |
+| 1          | R       | 442              | 
+| 2          | PG      | 480              |
+| 2          | G       | 397              |
+| 2          | PG-13   | 479              |
+| 2          | NC-17   | 493              |
+| 2          | R       | 462              |
+
+>  It's evident that both stores offer a similar range of movies across different ratings, with some variations in the quantity of items per rating category.
  
 12. Similarly, we want to understand how diversified the inventory is in terms of **replacement cost**. We want to 
 see how big of a hit it would be if a certain category of film became unpopular at a certain store.
