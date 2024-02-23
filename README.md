@@ -361,8 +361,13 @@ Left Join city ON address.city_id= city.city_id
 Left Join country ON city.country_id=country.country_id;
 ```
 
-> All the customers with their full addresses. 
-> There is a big variety in the origin of customers
+> All the customers with their full addresses.
+
+| first_name | last_name   | store_id | active |      address           | city        |   country   |
+|:--------:  | --------:   | -----:   | ----:  | -----------------:     | --------:   |----------:  |
+| MARY       | SMITH       |  1       | 1      |  1913 Hanoi Way        | Sasebo      | Japan       | 
+ 
+> **There is a big variety in the origin of customers**
 
 
 
