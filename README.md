@@ -388,6 +388,16 @@ Left join payment ON rental.rental_id= payment.rental_id
 Group by customer.customer_id
 Order by  sum(amount) desc;
 ```
+
+| first_name | last_name |  total rentals            | total amount paid |
+|:--------:| --------:    | -----------:      | ------: |
+|  1       | 1            |  ACADEMY DINOSAUR | PG      |  
+|  1       | 2            |  ACADEMY DINOSAUR | PG      | 
+|  1       | 3            |  ACADEMY DINOSAUR | PG      | 
+|  1       | 4            |  ACADEMY DINOSAUR | PG      | 
+|  1       | 16           |  AFFAIR PREJUDICE | G       | 
+|  1       | 17           |  AFFAIR PREJUDICE | G       | 
+
 >  The 599 customers have paid from 50 to 221 USD so far.
 
 
