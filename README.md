@@ -305,37 +305,40 @@ Order by store_id, Sum(replacement_cost) desc;
 | store_id | category     |  Number of films | Avg replacement cost  | total replacement_cost |
 |:--------:| --------:    | -----------:     | -------------------:  | -----------------:     |
 |  1       | Action       |  169             | 21.19                 |  3581.31               |
-|  1       | Drama        |  162             | 21.93                 |  3581.31               |
-|  1       | Sports       |  163             | 20.58                 |  3581.31               |
-|  1       | Animation    |  161             | 20.39                 |  3581.31               |
-|  1       | Sci-Fi       |  149             | 21.79                 |  3581.31               |
-|  1       | Family       |  157             | 20.54                 |  3581.31               |
-|  1       | New          |  148             | 19.27                 |  3581.31               |
-|  1       | Foreign      |  153             | 18.56                 |  3581.31               |
-|  1       | Comedy       |  142             | 19.44                 |  3581.31               |
-|  1       | Games        |  128             | 21.13                 |  3581.31               |
-|  1       | Classics     |  131             | 20.61                 |  3581.31               |
-|  1       | Documentary  |  130             | 20.73                 |  3581.31               |
-|  1       | Children     |  129             | 19.99                 |  3581.31               |
-|  1       | Music        |  122             | 19.28                 |  3581.31               |
-|  1       | Travel       |  114             | 19.88                 |  3581.31               |
-|  1       | Horror       |  112             | 19.75                 |  3581.31               |
-|  2       | Sports       |  181             | 20.70                 |  3581.31               |
-|  2       | Animation    |  174             | 19.99                 |  3581.31               |
-|  2       | Documentary  |  164             | 20.54                 |  3581.31               |
-|  2       | Sci-Fi       |  163             | 20.49                 |  3581.31               |
-|  2       | Action       |  143             | 21.50                 |  3581.31               |
-|  2       | Games        |  148             | 20.77                 |  3581.31               |
-|  2       | Family       |  153             | 19.51                 |  3581.31               |
-|  2       | Drama        |  138             | 21.46                 |  3581.31               |
-|  2       | Classics     |  139             | 21.29                 |  3581.31               |
-|  2       | Foreign      |  147             | 18.63                 |  3581.31               |
-|  2       | Children     |  140             | 19.50                 |  3581.31               |
-|  2       | Horror       |  136             | 19.56                 |  3581.31               |
-|  2       | New          |  127             | 20.03                 |  3581.31               |
-|  2       | Comedy       |  127             | 18.87                 |  3581.31               |
-|  2       | Travel       |  121             | 18.71                 |  3581.31               |
-|  2       | Music        |  110             | 18.99                 |  3581.31               |
+|  1       | Drama        |  162             | 21.93                 |  3553.38               |
+|  1       | Sports       |  163             | 20.58                 |  3354.37               |
+|  1       | Animation    |  161             | 20.39                 |  3282.39               |
+|  1       | Sci-Fi       |  149             | 21.79                 |  3247.51               |
+|  1       | Family       |  157             | 20.54                 |  3224.43               |
+|  1       | New          |  148             | 19.27                 |  2851.52               |
+|  1       | Foreign      |  153             | 18.56                 |  2839.47               |
+|  1       | Comedy       |  142             | 19.44                 |  2760.58               |
+|  1       | Games        |  128             | 21.13                 |  2704.72               |
+|  1       | Classics     |  131             | 20.61                 |  2700.69               |
+|  1       | Documentary  |  130             | 20.73                 |  2694.70               |
+|  1       | Children     |  129             | 19.99                 |  2578.71               |
+|  1       | Music        |  122             | 19.28                 |  2352.78               |
+|  1       | Travel       |  114             | 19.88                 |  2266.86               |
+|  1       | Horror       |  112             | 19.75                 |  2211.88               |
+|  2       | Sports       |  181             | 20.70                 |  3746.19               |
+|  2       | Animation    |  174             | 19.99                 |  3479.26               |
+|  2       | Documentary  |  164             | 20.54                 |  3369.36               |
+|  2       | Sci-Fi       |  163             | 20.49                 |  3340.37               |
+|  2       | Action       |  143             | 21.50                 |  3074.57               |
+|  2       | Games        |  148             | 20.77                 |  3074.52               |
+|  2       | Family       |  153             | 19.51                 |  2985.47               |
+|  2       | Drama        |  138             | 21.46                 |  2961.62               |
+|  2       | Classics     |  139             | 21.29                 |  2959.61               |
+|  2       | Foreign      |  147             | 18.63                 |  2739.53               |
+|  2       | Children     |  140             | 19.50                 |  2730.60               |
+|  2       | Horror       |  136             | 19.56                 |  2660.64               |
+|  2       | New          |  127             | 20.03                 |  2543.73               |
+|  2       | Comedy       |  127             | 18.87                 |  2396.73               |
+|  2       | Travel       |  121             | 18.71                 |  2263.79               |
+|  2       | Music        |  110             | 18.99                 |  2089.90               |
+
+>This breakdown allows for a better understanding of the replacement cost distribution across different film categories at each store.
+> It also provides insights into the potential financial impact if a particular category were to become unpopular at a certain store.
 
 
 13.	We want to make sure you folks have a good handle on **who your customers are**. Please provide a list 
