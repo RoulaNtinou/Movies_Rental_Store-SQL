@@ -337,7 +337,7 @@ Order by store_id, Sum(replacement_cost) desc;
 |  2       | Travel       |  121             | 18.71                 |  2263.79               |
 |  2       | Music        |  110             | 18.99                 |  2089.90               |
 
->This breakdown allows for a better understanding of the replacement cost distribution across different film categories at each store.
+> This breakdown allows for a better understanding of the replacement cost distribution across different film categories at each store.
 > It also provides insights into the potential financial impact if a particular category were to become unpopular at a certain store.
 
 
@@ -477,13 +477,29 @@ Group by
 
 | Number of Awards  | % of Actors with Awards   | 
 | :-------------:   | :----------------------:  |
-| Three Awards      | 0.5714                    |
-| Two Awards        | 0.9242                    |
-| One Awards        | 0.8333                    |
+| Three Awards      |  57.14%                   |
+| Two Awards        |  92.42%                   |
+| One Awards        |  83.33%                   |
 
 > The analysis on actors with different numbers of awards indicates a strong coverage across the board.
 
 
 
 ### Insights
+
+* **Inventory Diversification**: The inventory analysis reveals a diverse range of films across different categories and ratings at both stores.
+  This diversity is essential for catering to varying customer preferences and ensuring a broad appeal to different audience demographics
+
+* **Financial Management**: Insights into payment processing, average transaction values, and maximum payments provide valuable information
+  for financial management and fraud prevention.
+
+* **Customer Value Segmentation**: There are segments of high-value customers who contribute significantly to the revenue stream.
+  Understanding the characteristics and preferences of these segments can help tailor marketing strategies and loyalty programs to retain and attract similar high-value customers.
+
+* **Actor Coverage and Film Quality**: The analysis on actor coverage indicates a focus on quality films featuring acclaimed actors with multiple awards.
+  This suggests a commitment to offering high-quality cinematic experiences to customers, which can enhance the company's reputation and attract discerning movie enthusiasts.
+
+* **Board of Advisors and Investors**: The presence of a diverse board of advisors and investors signifies a strong network of support and expertise available to the company
+  that can provide strategic guidance and potentially open doors to new opportunities for growth and expansion
+
 
