@@ -389,22 +389,31 @@ Group by customer.customer_id
 Order by  sum(amount) desc;
 ```
 
-| first_name | last_name |  total rentals            | total amount paid |
-|:--------:| --------:    | -----------:      | ------: |
-|  1       | 1            |  ACADEMY DINOSAUR | PG      |  
-|  1       | 2            |  ACADEMY DINOSAUR | PG      | 
-|  1       | 3            |  ACADEMY DINOSAUR | PG      | 
-|  1       | 4            |  ACADEMY DINOSAUR | PG      | 
-|  1       | 16           |  AFFAIR PREJUDICE | G       | 
-|  1       | 17           |  AFFAIR PREJUDICE | G       | 
+| first_name | last_name  |  total rentals | total amount paid |
+|:--------:  | --------:  | -----------:   | ----------:       |
+|  Karl      | Seal       |  45            | 221.55            |  
+|  Eleanor   | Hunt       |  46            | 216.54            | 
+|  Clara     | Shaw       |  42            | 195.58            | 
+|  Rhonda    | Kennedy    |  39            | 194.61            | 
+|  Marion    | Snyder     |  39            | 194.61            |
+|  Tommy     | Collazo    |  38            | 186.62            | 
 
 >  The 599 customers have paid from 50 to 221 USD so far.
+>  The most valuable customers based on their total lifetime value, with Karl Seal and Eleanor Hunt being the top two customers.
+>  This information can be valuable for targeted marketing efforts and loyalty programs to retain high-value customers.
 
 
 
 
 
-15. My partner and I would like to get to know your **board of advisors and any current investors**.
+
+
+
+
+
+
+
+15. We would like to get to know your **board of advisors and any current investors**.
 Could you please provide a list of advisor and investor names in one table? 
 Could you please note whether they are an investor or an advisor, and for the investors, 
 it would be good to include which company they work with. 
@@ -437,6 +446,7 @@ From investor;
 |  Investor     | Anthony     |  Stark         | Iron Investors         |
 |  Investor     | William     |  Wonka         | Chocolate Ventures     |
 
+> The company has a diverse board of advisors and investors from various industries, providing valuable insights and financial backing
 
 
 16. We're interested in how well you have covered the **most-awarded actors**. 
@@ -470,6 +480,8 @@ Group by
 | Three Awards      | 0.5714                    |
 | Two Awards        | 0.9242                    |
 | One Awards        | 0.8333                    |
+
+> The analysis on actors with different numbers of awards indicates a strong coverage across the board.
 
 
 
